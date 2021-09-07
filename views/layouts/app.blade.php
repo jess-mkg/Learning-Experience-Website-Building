@@ -24,7 +24,7 @@
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
 
-                <a class="navbar-brand d-flex" href="{{ url('/home') }}">
+                <a class="navbar-brand d-flex" href="{{ url('/') }}">
                     <div><img src="/svg/logo12.png" style="height: 50px;" class="pr-2"></div>
                     <div class="pt-2">Gifted & Talented Checklist</div>
                 </a>
@@ -40,20 +40,22 @@
                         <!-- Authentication Links -->
                         <ul class="navbar-nav pt-2">
                         <li class="nav-item">
-                            <a href="/home" style="color: black; padding-right: 15px; padding-top: 20px;">Home</a>
+                            <a href="/" style="color: black; padding-right: 15px; padding-top: 20px;">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/checklist" style="color: black; padding-right: 15px; padding-top: 20px;">Checklist</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/about" style="color: black; padding-right: 15px; padding-top: 20px;">About</a>
+                            <a href="/start-checklist" style="color: black; padding-right: 15px; padding-top: 20px;">Checklist</a>
                         </li>
                         <li class="nav-item">
                             <a href="/profile" style="color: black; padding-right: 15px; padding-top: 20px;">Profile</a>
                         </li>
                         <li class="nav-item">
+                            <a href="/about" style="color: black; padding-right: 15px; padding-top: 20px;">About</a>
+                        </li>
+                        <li class="nav-item">
                             <a href="/contacts" style="color: black; padding-right: 15px; padding-top: 20px;">Contacts</a>
                         </li>
+
+
                     </ul>
                         @guest
                             @if (Route::has('login'))
@@ -83,6 +85,12 @@
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                         @csrf
                                     </form>
+                                    <a class="dropdown-item" href="/results">
+                                        {{ __('Results') }}
+                                    </a>
+                                    <a class="dropdown-item" href="/settings">
+                                        {{ __('Settings') }}
+                                    </a>
                                 </div>
                             </li>
                         @endguest
