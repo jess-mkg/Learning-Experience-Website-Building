@@ -13,10 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Route::get('/contacts', function () {
     return view('contacts');
 });
@@ -25,11 +21,11 @@ Route::get('/about', function () {
     return view('about');
 });
 
-Route::get('/home', function () {
+Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/checklist', function () {
+Route::get('/start-checklist', function () {
     return view('start');
 });
 
@@ -37,4 +33,17 @@ Route::get('/checklist', function () {
 Auth::routes();
 
 Route::get('/profile', [App\Http\Controllers\HomeController::class, 'index'])->name('profile');
+
+Auth::routes();
+
+Route::get('/checklist', [App\Http\Controllers\HomeController::class, 'checklist'])->name('checklist');
+
+Auth::routes();
+
+Route::get('/results', [App\Http\Controllers\HomeController::class, 'results'])->name('results');
+
+Auth::routes();
+
+Route::get('/settings', [App\Http\Controllers\HomeController::class, 'settings'])->name('settings');
+
 
