@@ -9,8 +9,8 @@
                 <div class="card-header">{{ __('About') }}</div>
 
                 <div class="card-body">
-
-
+                    <p>No data to present in this section yet</p>
+                </div>
 
 
             </div>

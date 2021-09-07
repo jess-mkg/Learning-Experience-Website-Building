@@ -9,10 +9,14 @@
                 <div class="card-header">{{ __('Checklist Start Page') }}</div>
 
                 <div class="card-body">
-
-
+                    <p>*Information about the checklist*</p>
+                    <p>*Benefits*</p>
+                </div>
 
             </div>
+            <form style="text-align: center; margin: 15px; font-size: 130%">
+                <input type="button" value="Start Checklist"/>
+            </form>
         </div>
     </div>
 </div>
