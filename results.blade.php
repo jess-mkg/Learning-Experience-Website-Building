@@ -17,15 +17,6 @@
 
                     {{ __('User: ') }}{{ Auth::user()->name }}
                 </div>
-                <div class="card-body">
-                    {{ __('tttt: ') }}
-                </div>
-                <div class="card-body">
-                    {{ __('yyyy: ') }}
-                </div>
-                <div class="card-body">
-                    {{ __('eeeee: ') }}
-                </div>
             </div>
         </div>
     </div>

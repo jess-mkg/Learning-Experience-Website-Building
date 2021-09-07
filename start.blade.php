@@ -15,7 +15,7 @@
 
             </div>
             <form style="text-align: center; margin: 15px; font-size: 130%">
-                <input type="button" value="Start Checklist"/>
+                <a href="/checklist"><input type="button" value="Start Checklist"/></a>
             </form>
         </div>
     </div>

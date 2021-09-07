@@ -20,12 +20,7 @@
                 <div class="card-body">
                     {{ __('v: ') }}
                 </div>
-                <div class="card-body">
-                    {{ __('c: ') }}
-                </div>
-                <div class="card-body">
-                    {{ __('u: ') }}
-                </div>
+
             </div>
         </div>
     </div>
