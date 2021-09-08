@@ -26,13 +26,13 @@
 
                 <a class="navbar-brand d-flex" href="{{ url('/') }}">
                     <div><img src="/svg/logo12.png" style="height: 50px;" class="pr-2"></div>
-                    <div class="pt-2">Gifted & Talented Checklist</div>
+                    <div style="padding-top: 1rem; font-size: 129%">Gifted & Talented Checklist</div>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="pt-3 collapse navbar-collapse" id="navbarSupportedContent" style="font-size: 110%">
                     <!-- Left Side Of Navbar -->
 
                     <!-- Right Side Of Navbar -->

@@ -6,7 +6,7 @@
         <div class="col-md-9">
             <div class="card">
 
-                <div class="card-header">{{ __('User Profile') }}</div>
+                <div class="card-header">{{ __('User Profile: ') }}{{ Auth::user()->name }}</div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -14,11 +14,8 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
-                    {{ __('User: ') }}{{ Auth::user()->name }}
-                </div>
-                <div class="card-body">
-                    {{ __('Child: ') }}
+                    {{ __('Child: ') }}{{ Auth::user()->childname }} <br>
+                    {{ __('Age: ') }}{{ Auth::user()->childage }}
                 </div>
                 <div class="card-body">
                     {{ __('Checklist: ') }}

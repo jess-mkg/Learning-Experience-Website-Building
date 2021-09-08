@@ -6,7 +6,7 @@
         <div class="col-md-9">
             <div class="card">
 
-                <div class="card-header">{{ __('checklist') }}</div>
+                <div class="card-header">{{ __('Checklist') }}</div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -14,17 +14,7 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
-                    {{ __('User: ') }}{{ Auth::user()->name }}
-                </div>
-                <div class="card-body">
-                    {{ __('who: ') }}
-                </div>
-                <div class="card-body">
-                    {{ __('how: ') }}
-                </div>
-                <div class="card-body">
-                    {{ __('why: ') }}
+                    {{ __('Checklist Completed: ') }}
                 </div>
             </div>
         </div>

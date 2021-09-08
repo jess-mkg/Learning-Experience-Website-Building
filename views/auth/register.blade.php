@@ -26,6 +26,48 @@
                         </div>
 
                         <div class="form-group row">
+                            <label for="role" class="col-md-4 col-form-label text-md-right">{{ __("Role") }}</label>
+
+                            <div class="col-md-6">
+                                <input id="role" type="text" class="form-control @error('role') is-invalid @enderror" name="role" value="{{ old('role') }}" required autocomplete="role" autofocus>
+
+                                @error('role')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="childname" class="col-md-4 col-form-label text-md-right">{{ __("Child's Name") }}</label>
+
+                            <div class="col-md-6">
+                                <input id="childname" type="text" class="form-control @error('childname') is-invalid @enderror" name="childname" value="{{ old('childname') }}" required autocomplete="childname" autofocus>
+
+                                @error('childname')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="childage" class="col-md-4 col-form-label text-md-right">{{ __("Child's Age") }}</label>
+
+                            <div class="col-md-6">
+                                <input id="childage" type="text" class="form-control @error('childage') is-invalid @enderror" name="childage" value="{{ old('childage') }}" required autocomplete="childage" autofocus>
+
+                                @error('childage')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
 
                             <div class="col-md-6">

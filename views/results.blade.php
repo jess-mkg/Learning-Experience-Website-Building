@@ -17,10 +17,6 @@
 
                     {{ __('User: ') }}{{ Auth::user()->name }}
                 </div>
-                <div class="card-body">
-                    {{ __('tttt: ') }}
-                </div>
-
             </div>
         </div>
     </div>
