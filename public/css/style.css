@@ -1,0 +1,32 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 45% 10% 10% 10% 10% 10%;
+    grid-gap: 5px;
+}
+
+.grid-labels {
+    justify-content: center;
+    text-align: center;
+}
+
+.grid-content-right {
+    float: right;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.grid-content-left {
+    float: left;
+    list-style-type: none;
+}
+
+.grid-item {
+    justify-content: center;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.checklist-card-size {
+    flex: 0 0 90%;
+    max-width: 90%;
+}
