@@ -18,7 +18,6 @@
                     {{ __('User: ') }}{{ Auth::user()->name }}
                 </div>
                 <div class="card-body">
-                    {{ __('v: ') }}
                 </div>
 
             </div>
