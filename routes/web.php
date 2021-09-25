@@ -33,7 +33,7 @@ Route::get('/start-checklist', function () {
     return view('start');
 });
 
-
+Route::view("/page", "parent");
 Auth::routes();
 
 Route::get('/profile', [App\Http\Controllers\HomeController::class, 'index'])->name('profile');
@@ -50,4 +50,10 @@ Auth::routes();
 
 Route::get('/settings', [App\Http\Controllers\HomeController::class, 'settings'])->name('settings');
 
+Auth::routes();
+Route::view('/checklist-teachers', 'teachers');
+Route::post('submit', [App\Http\Controllers\TChecklistController::class, 'submitteacherform']);
 
+Auth::routes();
+Route::view('/checklist-parents', 'parents');
+Route::post('submit', [App\Http\Controllers\TChecklistController::class, 'submitparentform']);
