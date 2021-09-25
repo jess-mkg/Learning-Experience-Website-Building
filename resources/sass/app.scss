@@ -1,0 +1,14 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+// Variables
+@import 'variables';
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+.grid-item {
+    padding: 0px 10px 0px;
+}
+
+.grid-content-right {
+    float: right;
+    list-style-type: none;
+}
