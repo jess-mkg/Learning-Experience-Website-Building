@@ -11,7 +11,7 @@
             <div class="card">
                 <div class="card-header">{{ __('Teachers Checklist') }}</div>
                 <div class="card-body">
-                    <form method="POST" class="checklist-form" action="submit" multistep kw-cloak>
+                    <form method="POST" class="checklist-form" action="/submit/teacherform" multistep kw-cloak>
                     @csrf
                         <div class="kw-multistep-step">
                             <div class="form-section kw-multistep-body">
@@ -253,7 +253,7 @@
                                     <div class="grid-item"><input type="radio" value="4" name="per25"></div>
                                     <div class="grid-item"><input type="radio" value="5" name="per25"></div>
                                 </div>
-                                <div class="grid-container" style="background-color: AliceBlue;" id="per26" type="form-control">
+                                <div class="grid-container" id="per26" type="form-control">
                                     <div><label for="per26" class="grid-content-left">Visualizes position of body in space.</label></div>
                                     <div class="grid-item"><input type="radio" value="1" name="per26"></div>
                                     <div class="grid-item"><input type="radio" value="2" name="per26"></div>
@@ -261,7 +261,7 @@
                                     <div class="grid-item"><input type="radio" value="4" name="per26"></div>
                                     <div class="grid-item"><input type="radio" value="5" name="per26"></div>
                                 </div>
-                                <div class="grid-container" id="per27" type="form-control">
+                                <div class="grid-container" style="background-color: AliceBlue;" id="per27" type="form-control">
                                     <div><label for="per27" class="grid-content-left">Heightened sense of touch.</label></div>
                                     <div class="grid-item"><input type="radio" value="1" name="per27"></div>
                                     <div class="grid-item"><input type="radio" value="2" name="per27"></div>
@@ -313,7 +313,7 @@
                                     <div class="grid-labels"><label>Agree</label></div>
                                     <div class="grid-labels"><label>Strongly Agree</label></div>
                                 </div>
-                                <div class="grid-container" id="moc31" type="form-control">
+                                <div class="grid-container" style="background-color: AliceBlue;" id="moc31" type="form-control">
                                     <div><label for="moc31" class="grid-content-left">Speed during physical activities (without training).</label></div>
                                     <div class="grid-item"><input type="radio" value="1" name="moc31"></div>
                                     <div class="grid-item"><input type="radio" value="2" name="moc31"></div>
@@ -321,7 +321,7 @@
                                     <div class="grid-item"><input type="radio" value="4" name="moc31"></div>
                                     <div class="grid-item"><input type="radio" value="5" name="moc31"></div>
                                 </div>
-                                <div class="grid-container" style="background-color: AliceBlue;" id="moc32" type="form-control">
+                                <div class="grid-container" id="moc32" type="form-control">
                                     <div><label for="moc32" class="grid-content-left">Strong motor control at an early age/stage of development.</label></div>
                                     <div class="grid-item"><input type="radio" value="1" name="moc32"></div>
                                     <div class="grid-item"><input type="radio" value="2" name="moc32"></div>
@@ -329,7 +329,7 @@
                                     <div class="grid-item"><input type="radio" value="4" name="moc32"></div>
                                     <div class="grid-item"><input type="radio" value="5" name="moc32"></div>
                                 </div>
-                                <div class="grid-container" id="moc33" type="form-control">
+                                <div class="grid-container" style="background-color: AliceBlue;" id="moc33" type="form-control">
                                     <div><label for="moc33" class="grid-content-left">Well-coordinated (doesn’t bump into objects/fall over).</label></div>
                                     <div class="grid-item"><input type="radio" value="1" name="moc33"></div>
                                     <div class="grid-item"><input type="radio" value="2" name="moc33"></div>
@@ -355,7 +355,7 @@
                                     <div class="grid-item"><input type="radio" value="4" name="sp34"></div>
                                     <div class="grid-item"><input type="radio" value="5" name="sp34"></div>
                                 </div>
-                                <div class="grid-container" style="background-color: AliceBlue;" id="sp35" type="form-control">
+                                <div class="grid-container" id="sp35" type="form-control">
                                     <div><label for="sp35" class="grid-content-left">Engages in deep existentialist questioning Flexibility, inner freedom, balance and inner peace in times of crisis.</label></div>
                                     <div class="grid-item"><input type="radio" value="1" name="sp35"></div>
                                     <div class="grid-item"><input type="radio" value="2" name="sp35"></div>
@@ -363,7 +363,7 @@
                                     <div class="grid-item"><input type="radio" value="4" name="sp35"></div>
                                     <div class="grid-item"><input type="radio" value="5" name="sp35"></div>
                                 </div>
-                                <div class="grid-container" id="sp36" type="form-control">
+                                <div class="grid-container" style="background-color: AliceBlue;" id="sp36" type="form-control">
                                     <div><label for="sp36" class="grid-content-left">Can analyse the meaning of personal experiences.</label></div>
                                     <div class="grid-item"><input type="radio" value="1" name="sp36"></div>
                                     <div class="grid-item"><input type="radio" value="2" name="sp36"></div>
@@ -371,7 +371,7 @@
                                     <div class="grid-item"><input type="radio" value="4" name="sp36"></div>
                                     <div class="grid-item"><input type="radio" value="5" name="sp36"></div>
                                 </div>
-                                <div class="grid-container" style="background-color: AliceBlue;" id="sp37" type="form-control">
+                                <div class="grid-container" id="sp37" type="form-control">
                                     <div><label for="sp37" class="grid-content-left">High moral/personal values (especially prior to influences of development/training).</label></div>
                                     <div class="grid-item"><input type="radio" value="1" name="sp37"></div>
                                     <div class="grid-item"><input type="radio" value="2" name="sp37"></div>
@@ -379,7 +379,7 @@
                                     <div class="grid-item"><input type="radio" value="4" name="sp37"></div>
                                     <div class="grid-item"><input type="radio" value="5" name="sp37"></div>
                                 </div>
-                                <div class="grid-container" id="sp38" type="form-control">
+                                <div class="grid-container" style="background-color: AliceBlue;" id="sp38" type="form-control">
                                     <div><label for="sp38" class="grid-content-left">Affinity with animals.</label></div>
                                     <div class="grid-item"><input type="radio" value="1" name="sp38"></div>
                                     <div class="grid-item"><input type="radio" value="2" name="sp38"></div>
@@ -387,7 +387,7 @@
                                     <div class="grid-item"><input type="radio" value="4" name="sp38"></div>
                                     <div class="grid-item"><input type="radio" value="5" name="sp38"></div>
                                 </div>
-                                <div class="grid-container" style="background-color: AliceBlue;" id="sp39" type="form-control">
+                                <div class="grid-container" id="sp39" type="form-control">
                                     <div><label for="sp39" class="grid-content-left">Strong connection to nature/land/Country.</label></div>
                                     <div class="grid-item"><input type="radio" value="1" name="sp39"></div>
                                     <div class="grid-item"><input type="radio" value="2" name="sp39"></div>
@@ -395,7 +395,7 @@
                                     <div class="grid-item"><input type="radio" value="4" name="sp39"></div>
                                     <div class="grid-item"><input type="radio" value="5" name="sp39"></div>
                                 </div>
-                                <div class="grid-container" id="sp40" type="form-control">
+                                <div class="grid-container" style="background-color: AliceBlue;" id="sp40" type="form-control">
                                     <div><label for="sp40" class="grid-content-left">Strong connections to culture.</label></div>
                                     <div class="grid-item"><input type="radio" value="1" name="sp40"></div>
                                     <div class="grid-item"><input type="radio" value="2" name="sp40"></div>
@@ -417,6 +417,7 @@
         </div>
     </div>
     </section>
+    <!--
     @section('script')
     <script type="text/javascript">
         $(function() {
@@ -455,7 +456,7 @@
         navigateTo(0);
     });
     </script>
-    @endsection
+    @endsection -->
 
 </div>
 

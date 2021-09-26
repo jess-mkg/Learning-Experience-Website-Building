@@ -11,7 +11,7 @@
             <div class="card">
                 <div class="card-header">{{ __('Parents Checklist') }}</div>
                 <div class="card-body">
-                    <form method="POST" class="checklist-form" action="submit" multistep kw-cloak>
+                    <form method="POST" class="checklist-form" action="/submit/parentform" multistep kw-cloak>
                     @csrf
                         <div class="kw-multistep-step">
                             <div class="form-section kw-multistep-body">

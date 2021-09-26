@@ -55,4 +55,24 @@ class HomeController extends Controller
     {
         return view('settings');
     }
+
+    /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function teachers()
+    {
+        return view('teachers');
+    }
+
+    /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function parents()
+    {
+        return view('parents');
+    }
 }
