@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
+<title>About</title>
+<link type="text/css" rel="stylesheet" href="/css/style.css">
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-9">
@@ -10,7 +12,7 @@
 
                 <div class="card-body">
 
-                    <p>Dr Michelle Ronksley-Pavia is a world-leading researcher in the field gifted and talented and twice
+                    <p class="my-text">Dr Michelle Ronksley-Pavia is a world-leading researcher in the field gifted and talented and twice
                         exceptional education.  Dr Ronksley is also an Australian Delegate to the World Council for Gifted
                         and Talented Children (WCGTC). Dr Michelle Neumann has expertise in early childhood education and
                         digital technologies. Our research lab has been awarded several grants to explore the role of online
@@ -22,7 +24,7 @@
 
 
                     <h4>Parent Assessments for Gifted and Talented Students</h4>
-                    <p>This parent assessment of young children’s (2 to 6 years old) will
+                    <p class="my-text">This parent assessment of young children’s (2 to 6 years old) will
                         provide an overarching picture of children’s physical, cognitive and
                         social-emotional gifts and strengths. It will give some key indicators
                         of whether your child displays characteristics of giftedness such as
@@ -32,7 +34,7 @@
                         to excel in the future. </p>
 
                     <h4>Teachers Assessments for Gifted and Talented Students</h4>
-                    <p>This teacher assessment for primary school children (6 to 12 years old)
+                    <p class="my-text">This teacher assessment for primary school children (6 to 12 years old)
                         is a checklist that can be used to help teachers identify their student’s
                         potential areas of giftedness (Intellectual, Creative, Social, Perceptual,
                         Physical domains) and indicators that may assist in further specific identification

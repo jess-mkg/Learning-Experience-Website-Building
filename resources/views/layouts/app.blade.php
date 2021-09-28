@@ -7,8 +7,6 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Profile</title>
-
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
     <script type="text/javascript" src="js/my.js"></script>
@@ -19,6 +17,7 @@
     <link rel="tab icon" href="/svg/favicon-32x32.png">
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="/css/style.css">
 </head>
 <body>
     <div id="app">
@@ -27,7 +26,7 @@
 
                 <a class="navbar-brand d-flex" href="{{ url('/') }}">
                     <div><img src="/svg/logo12.png" style="height: 50px;" class="pr-2"></div>
-                    <div style="padding-top: 1rem; font-size: 129%">Gifted & Talented Checklist</div>
+                    <div style="padding-top: 1rem; font-size: 140%">Gifted & Talented Checklist</div>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -41,19 +40,19 @@
                         <!-- Authentication Links -->
                         <ul class="navbar-nav pt-2">
                         <li class="nav-item">
-                            <a href="/" style="color: black; padding-right: 15px; padding-top: 20px;">Home</a>
+                            <a href="/" class="mynav">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/start-checklist" style="color: black; padding-right: 15px; padding-top: 20px;">Checklist</a>
+                            <a href="/start-checklist" class="mynav">Checklist</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/profile" style="color: black; padding-right: 15px; padding-top: 20px;">Profile</a>
+                            <a href="/profile" class="mynav">Profile</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/about" style="color: black; padding-right: 15px; padding-top: 20px;">About</a>
+                            <a href="/about" class="mynav">About</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/contacts" style="color: black; padding-right: 15px; padding-top: 20px;">Contacts</a>
+                            <a href="/contacts" class="mynav">Contacts</a>
                         </li>
 
 

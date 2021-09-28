@@ -1,20 +1,22 @@
 @extends('layouts.app')
 
 @section('content')
+<title>Home</title>
+<link type="text/css" rel="stylesheet" href="/css/style.css">
 <div class="container">
     <div>
         <div class="row justify-content-center">
-            <img src="/svg/logo12.png" style="height: 500px; width: 400px">
+            <img src="/svg/logo12.png" style="height: 505px; width: 430px">
         </div>
-        <div class="row justify-content-center" style="padding: 20px">
-            <div class="card col" style="margin-right: 50px; margin-left: 50px; padding: 20px; text-align: center; justify-content: center;">
-            It will give some key indicators of whether your child displays characteristics of giftedness such as memory, creativity, humour, vocabulary and imagination. </div>
+        <div class="row justify-content-center" style="padding: 10px">
+            <div class="card col home-cards">
+            <p>Gives key indicators of whether your child displays characteristics of giftedness such as <span class="myspan">memory</span>, <span class="myspan">creativity</span>, <span class="myspan">humour</span>, <span class="myspan">vocabulary</span> and <span class="myspan">imagination</span>.</p> </div>
 
-            <div class="card col" style="margin-right: 50px; margin-left: 50px; padding: 20px; text-align: center; justify-content: center; font-size: 125%;">
-            Set Up Your Profile Today!<br><a href="/profile" style="text-decoration: underline; color: black;">Click Here!</a></div>
+            <div class="card col home-cards" style="font-size: 175%;">
+            Set Up Your Profile Today<br><a href="/profile"><span class="boldspan">Click Here</span></a></div>
 
-            <div class="card col" style="margin-right: 50px; margin-left: 50px; padding: 20px; text-align: center; justify-content: center;">
-            This checklist will provide an overarching picture of children’s physical, cognitive and social-emotional gifts and strengths. </div>
+            <div class="card col home-cards">
+            <p>This checklist will provide an overarching picture of children’s <span class="myspan">physical</span>, <span class="myspan">cognitive</span> and <span class="myspan">social-emotional</span> gifts and <span class="myspan">strengths</span>.</p> </div>
     </div>
 </div>
 @endsection

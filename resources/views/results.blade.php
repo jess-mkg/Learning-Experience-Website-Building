@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<title>Results</title>
 <div class="container">
 <link type="text/css" rel="stylesheet" href="/css/style.css">
     <div class="row justify-content-center">
@@ -10,14 +11,9 @@
                 <div class="card-header">{{ __('Results') }}</div>
 
                 <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
+                    <!-- results for teachers checklist -->
                     @if ((DB::table('checklist_teachers')->where('user_id', '=', Auth::user()->name))->first())
-                    <h2>Checklist Results</h2> <br>
+                    <h2>Teacher Checklist Results</h2> <br>
                         <section class="mysection">
                             <div class="section-box">
                                 <div class="graph" style="height: {{ App\Http\Controllers\ViewTeacherResults::teacherResultsInt() }}%; background: linear-gradient(0deg, rgb(191, 237, 26), rgba(217, 233, 159, 1));">
@@ -63,6 +59,25 @@
                             </div>
                         </section>
                         <br>
+                    <!-- results for parents checklist -->
+                    @elseif ((DB::table('checklist_parents')->where('user_id', '=', Auth::user()->name))->first())
+                    <h2>Parent Checklist Results</h2>
+                    <br>
+                    <table style="border: 1px solid black; padding:2px; width:80%">
+                        <tr style="border: 1px solid black; padding:2px">
+                            <th style="border: 1px solid black; padding:2px">Cognative</th>
+                            <th style="border: 1px solid black; padding:2px">Physical</th>
+                            <th style="border: 1px solid black; padding:2px">Social Emotional</th>
+                            <th style="border: 1px solid black; padding:2px">Spiritual</th>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid black; padding:2px">{{ App\Http\Controllers\ViewParentResults::parentsResultsCog() }}%</td>
+                            <td style="border: 1px solid black; padding:2px">{{ App\Http\Controllers\ViewParentResults::parentsResultsPhy() }}%</td>
+                            <td style="border: 1px solid black; padding:2px">{{ App\Http\Controllers\ViewParentResults::parentsResultsSE() }}%</td>
+                            <td style="border: 1px solid black; padding:2px">{{ App\Http\Controllers\ViewParentResults::parentsResultsSpt() }}%</td>
+                        </tr>
+                    </table>
+                    <!-- no results to display -->
                     @else
                         <br>
                         {{ __('Checklist not complete yet') }}

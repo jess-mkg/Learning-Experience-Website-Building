@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<title>Teachers Checklist</title>
 <link href="/css/style.css" rel="stylesheet">
 
 <div class="container">

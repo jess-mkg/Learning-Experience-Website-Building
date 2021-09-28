@@ -2,7 +2,7 @@
 
 @section('content')
 <link href="/css/style.css" rel="stylesheet">
-
+<title>Parents Checklist</title>
 <div class="container">
     <section>
     <div class="row justify-content-center">
