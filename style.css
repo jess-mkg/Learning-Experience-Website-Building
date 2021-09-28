@@ -133,13 +133,32 @@
         color: rgb(216, 27, 64);
     }
 
+    .otherspan {
+        font-weight: bold;
+        color: rgb(30, 163, 41);
+    }
+
     .boldspan {
-        color: rgb(48, 136, 36);
+        color: rgb(10, 148, 40);
         font-weight: 750;
+    }
+
+    .mya:hover {
+        color: rgb(15, 116, 37);
+        font-weight: 750;
+        text-decoration: none;
     }
 
     .mynav {
         color: black;
+        padding-right: 15px;
+        padding-top: 20px;
+        font-size: 110%;
+    }
+
+    .mynav:hover {
+        color: rgb(20, 119, 20);
+        text-decoration: none;
         padding-right: 15px;
         padding-top: 20px;
         font-size: 110%;
@@ -151,4 +170,86 @@
 
     .my-text {
         font-size: 120%;
+    }
+
+    .mytooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+    }
+
+    .mytooltiptext:hover {
+        visibility: visible;
+    }
+
+    .tree-container {
+        display: flex;
+        margin-top: 40px;
+        margin-left: 40px;
+    }
+
+    .result-tree {
+        width: 35px;
+        height: 500px;
+        background-color: saddlebrown;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-bottom: 40px;
+    }
+
+    .result-tree .cat-branch-r {
+        height: 25px;
+        background-color: peru;
+        border-radius: 10px;
+        display: flex;
+        justify-content: flex-end;
+        transform: rotate(-30deg);
+    }
+
+    .result-tree .cat-branch-r .leaf {
+        width: 40px;
+        height: 40px;
+        background-color: green;
+        border-radius: 100% 0 100% 0;
+        transform: translateY(-100%);
+    }
+
+    .result-tree .cat-branch-r:hover {
+        height: 25px;
+        background-color: rgb(214, 189, 164);
+        border-radius: 10px;
+        display: flex;
+        justify-content: flex-end;
+        transform: rotate(-30deg);
+    }
+
+    .result-tree .cat-branch-r .leaf:hover {
+        width: 40px;
+        height: 40px;
+        background-color: rgb(42, 173, 42);
+        border-radius: 100% 0 100% 0;
+        transform: translateY(-100%);
+    }
+
+    .page-content {
+        display: flex;
+    }
+
+    .page-item1 {
+        margin: 20px;
+        margin-left: 25px;
+        margin-top: 15px;
+    }
+
+    .table-content {
+        padding: 40px;
     }

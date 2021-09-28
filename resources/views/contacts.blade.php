@@ -9,36 +9,36 @@
             <div class="card" style="width: 110%;">
                 <div class="card-body" style="padding: 30px;">
                     <div class="contact">
-                        <div class="contact-contact">
+                        <!-- <div class="contact-contact">
                             <img class="contact-image" src="/svg/Michelle-Neumann.jpg">
                             <div class="col-md-6 wow animated fadeInRight myclass" data-wow-delay=".2s">
                                 <form class="shake" role="form" method="POST" id="contactForm" name="contact-form" data-toggle="validator" action="/form-to-email">
                                 @csrf
-                                    <!-- Name -->
+
                                     <div class="form-group label-floating">
                                         <label class="control-label" for="name">Name</label>
                                         <input class="form-control" id="name" type="text" name="name" required data-error="Please enter your name">
                                         <div class="help-block with-errors"></div>
                                     </div>
-                                    <!-- email -->
+                                     email
                                     <div class="form-group label-floating">
                                         <label class="control-label" for="email">Email</label>
                                         <input class="form-control" id="email" type="email" name="email" required data-error="Please enter your Email">
                                         <div class="help-block with-errors"></div>
                                     </div>
-                                    <!-- Subject -->
+
                                     <div class="form-group label-floating">
                                         <label class="control-label">Subject</label>
                                         <input class="form-control" id="msg_subject" type="text" name="subject" required data-error="Please enter your message subject">
                                         <div class="help-block with-errors"></div>
                                     </div>
-                                    <!-- Message -->
+
                                     <div class="form-group label-floating">
                                         <label for="message" class="control-label">Message</label>
                                         <textarea class="form-control" rows="3" id="message" name="message" required data-error="Write your message"></textarea>
                                         <div class="help-block with-errors"></div>
                                     </div>
-                                    <!-- Form Submit -->
+
                                     <div class="form-submit mybutton">
                                         <button class="btn btn-common" type="submit" id="form-submit"><i class="material-icons mdi mdi-message-outline"></i> Send Message</button>
                                         <div id="msgSubmit" class="text-center hidden"></div>
@@ -46,7 +46,8 @@
                                     </div>
                                 </form>
                             </div>
-                        </div>
+                        </div> -->
+                        <img class="contact-image" src="/svg/Michelle-Neumann.jpg">
                         <h3 class="contact-name">Dr Michelle Neumann</h3>
                         <p class="contact-desc my-text">Dr Michelle Neumann is a Senior Lecturer and Researcher in the field of early
                             childhood education, literacy development, ICT and science education at Griffith

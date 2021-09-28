@@ -27,8 +27,8 @@ class ViewParentResults extends Controller
         $cog15 = DB::table('checklist_parents')->where('user_id', Auth::user()->name)->value('cog15');
         $cog16 = DB::table('checklist_parents')->where('user_id', Auth::user()->name)->value('cog16');
 
-        $cognative = ($cog1 + $cog2 + $cog3 + $cog4 + $cog5 + $cog6 + $cog7 + $cog8 + $cog9 + $cog10 + $cog11 + $cog12 + $cog13 + $cog14 + $cog15 + $cog16)/.80;
-
+        $cognative = ($cog1 + $cog2 + $cog3 + $cog4 + $cog5 + $cog6 + $cog7 + $cog8 + $cog9 + $cog10 + $cog11 + $cog12 + $cog13 + $cog14 + $cog15 + $cog16)/80;
+        $cognative = $cognative*250;
         return $cognative;
     }
 
@@ -43,8 +43,8 @@ class ViewParentResults extends Controller
         $phy24 = DB::table('checklist_parents')->where('user_id', Auth::user()->name)->value('phy24');
         $phy25 = DB::table('checklist_parents')->where('user_id', Auth::user()->name)->value('phy25');
 
-        $physical = ($phy17 + $phy18 + $phy19 + $phy20 + $phy21 + $phy22 + $phy23 + $phy24 + $phy25)/0.45;
-
+        $physical = ($phy17 + $phy18 + $phy19 + $phy20 + $phy21 + $phy22 + $phy23 + $phy24 + $phy25)/45;
+        $physical = $physical * 250;
         return $physical;
     }
 
@@ -59,8 +59,8 @@ class ViewParentResults extends Controller
         $se33 = DB::table('checklist_parents')->where('user_id', Auth::user()->name)->value('se33');
         $se34 = DB::table('checklist_parents')->where('user_id', Auth::user()->name)->value('se34');
 
-        $socialemotional = ($se26 + $se27 + $se28 + $se29 + $se30 + $se31 + $se32 + $se33 + $se34)/0.45;
-
+        $socialemotional = ($se26 + $se27 + $se28 + $se29 + $se30 + $se31 + $se32 + $se33 + $se34)/45;
+        $socialemotional = $socialemotional * 250;
         return $socialemotional;
     }
 
@@ -72,8 +72,8 @@ class ViewParentResults extends Controller
         $spt39 = DB::table('checklist_parents')->where('user_id', Auth::user()->name)->value('spt39');
         $spt40 = DB::table('checklist_parents')->where('user_id', Auth::user()->name)->value('spt40');
 
-        $spiritual = ($spt35 + $spt36 + $spt37 + $spt38 + $spt39 + $spt40)/0.30;
-
+        $spiritual = ($spt35 + $spt36 + $spt37 + $spt38 + $spt39 + $spt40)/30;
+        $spiritual = $spiritual * 250;
         return $spiritual;
     }
 }

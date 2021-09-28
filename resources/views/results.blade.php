@@ -63,20 +63,56 @@
                     @elseif ((DB::table('checklist_parents')->where('user_id', '=', Auth::user()->name))->first())
                     <h2>Parent Checklist Results</h2>
                     <br>
-                    <table style="border: 1px solid black; padding:2px; width:80%">
-                        <tr style="border: 1px solid black; padding:2px">
-                            <th style="border: 1px solid black; padding:2px">Cognative</th>
-                            <th style="border: 1px solid black; padding:2px">Physical</th>
-                            <th style="border: 1px solid black; padding:2px">Social Emotional</th>
-                            <th style="border: 1px solid black; padding:2px">Spiritual</th>
-                        </tr>
-                        <tr>
-                            <td style="border: 1px solid black; padding:2px">{{ App\Http\Controllers\ViewParentResults::parentsResultsCog() }}%</td>
-                            <td style="border: 1px solid black; padding:2px">{{ App\Http\Controllers\ViewParentResults::parentsResultsPhy() }}%</td>
-                            <td style="border: 1px solid black; padding:2px">{{ App\Http\Controllers\ViewParentResults::parentsResultsSE() }}%</td>
-                            <td style="border: 1px solid black; padding:2px">{{ App\Http\Controllers\ViewParentResults::parentsResultsSpt() }}%</td>
-                        </tr>
-                    </table>
+                    <div class="page-content">
+                        <div class="page-item" style="margin-right: 150px">
+                            <div class=tree-container>
+                                <figure class="result-tree">
+                                    <div data-toggle="tooltip" data-placement="top" title="Cognitive" class="cat-branch-r" style="width: {{App\Http\Controllers\ViewParentResults::parentsResultsCog()}}px">
+                                        <span class="leaf"></span>
+                                        <span class="leaf"></span>
+                                        <span class="leaf"></span>
+                                    </div>
+                                    <div data-toggle="tooltip" data-placement="top" title="Physical" class="cat-branch-r" style="width: {{App\Http\Controllers\ViewParentResults::parentsResultsPhy()}}px">
+                                        <span class="leaf"></span>
+                                        <span class="leaf"></span>
+                                    </div>
+                                    <div data-toggle="tooltip" data-placement="top" title="Social Emotional" class="cat-branch-r" style="width: {{App\Http\Controllers\ViewParentResults::parentsResultsSE()}}px">
+                                        <span class="leaf"></span>
+                                    </div>
+                                    <div data-toggle="tooltip" data-placement="top" title="Spiritual" class="cat-branch-r" style="width: {{App\Http\Controllers\ViewParentResults::parentsResultsSpt()}}px">
+                                        <span class="leaf"></span>
+                                        <span class="leaf"></span>
+                                    </div>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="page-item1">
+                            <table>
+                                <tr>
+                                    <th class="table-content">Cognitive</th>
+                                    <th class="table-content"> </th>
+                                </tr>
+                                <tr>
+                                    <th class="table-content">Physical</th>
+                                    <th class="table-content"> </th>
+                                </tr>
+                                <tr>
+                                    <th class="table-content">Social Emotional</th>
+                                    <th class="table-content"> </th>
+                                </tr>
+                                <tr>
+                                    <th class="table-content">Spiritual</th>
+                                    <th class="table-content"> </th>
+                                </tr>
+                            </table>
+                        </div>
+
+                    </div>
+
+
+
+
+
                     <!-- no results to display -->
                     @else
                         <br>
