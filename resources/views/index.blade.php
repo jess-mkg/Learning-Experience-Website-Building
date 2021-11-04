@@ -9,28 +9,26 @@
             <img src="/svg/logo12.png" class="tree-logo">
         </div>
         <div class="row justify-content-center" style="padding: 10px">
-            <div class="card col home-cards">
+            <div class="card col home-cards border-red">
                 <p>Indicates whether your child displays characteristics of
-                    <span class="otherspan">giftedness</span> such as
-                    <span class="myspan">memory</span>,
-                    <span class="myspan">creativity</span>,
-                    <span class="myspan">humour</span>,
-                    <span class="myspan">vocabulary</span> and
-                    <span class="myspan">imagination</span>.
+                    <span class="">giftedness</span> such as
+                    <span class="spanred">memory</span>,
+                    <span class="spanblue">perceptual ability</span>,
+                    <span class="spanyellow">leadership</span> and
+                    <span class="spangreen">intuitive</span>.
                 </p>
             </div>
 
-            <div class="card col home-cards" style="font-size: 175%;">
+            <div class="card col home-cards border-yellow" style="font-size: 175%;">
                 Set Up Your Profile Today<br><a class="mya" href="{{ route('register') }}"><span class="boldspan">Click Here</span></a>
             </div>
 
-            <div class="card col home-cards">
-                <p>This checklist will provide an overarching picture of children’s
-                    <span class="myspan">physical</span>,
-                    <span class="myspan">cognitive</span> and
-                    <span class="myspan">social-emotional</span>
-                    <span class="otherspan">gifts</span> and
-                    <span class="otherspan">strengths</span>.
+            <div class="card col home-cards border-green">
+                <p>This assessment will provide an overarching picture of children’s
+                    <span class="spanred">physical</span>,
+                    <span class="spanblue">cognitive</span>,
+                    <span class="spanyellow">social-emotional</span> and
+                    <span class="spangreen">spiritual</span> gifts and strengths</span>.
                 </p>
             </div>
         </div>

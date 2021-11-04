@@ -8,7 +8,7 @@
         <div class="col-md-9">
             <div class="card">
                 <div class="card-body" style="padding: 20px;">
-                    <div class="contact" style="background:#f6edd0;">
+                    <div class="contact">
                         <div class="my-wrapper">
                             <div class="my-wrap-item">
                                 <img class="contact-image" src="/svg/Michelle-Neumann.jpg">
@@ -45,7 +45,7 @@
                         </div>
 
                     </div> <br><br>
-                    <div class="contact" style="background:#f6edd0;">
+                    <div class="contact">
                         <div class="my-wrapper-o">
                             <div class="my-wrap-item">
                                 <h3 class="contact-name">Dr Michelle Ronksley-Pavia</h3>

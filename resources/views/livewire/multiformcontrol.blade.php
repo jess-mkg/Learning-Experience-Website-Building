@@ -1,4 +1,4 @@
-<div>
+<div> <!--@livewire('multiformcontrol')-->
     <form method="POST" class="checklist-form" action="/submit/parentform">
     @csrf
         @if ($currentStep == 1)
@@ -9,7 +9,7 @@
                 </div>
             </div>
             <div class="card form-section">
-                <div class="card-header">Cognetive</div>
+                <div class="card-header">Cognitive</div>
                 <div class="grid-container">
                     <div class=""></div>
                     <div class="grid-labels"><label>Strongly Disagree</label></div>

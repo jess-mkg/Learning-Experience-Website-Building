@@ -7,7 +7,7 @@
         <div class="col-md-9">
             <div class="card">
                 <div class="card-body">
-                    <h1>Gifted & Talented Checklist</h1>
+                    <h1>Gifted & Talented Assessment</h1>
                     <div>
                         <p class="my-text">Dr Michelle Ronksley-Pavia is a world-leading researcher in the field gifted and talented and twice
                             exceptional education. Dr Ronksley is also an Australian Delegate to the World Council for Gifted
@@ -22,7 +22,7 @@
                     </div>
                     <hr style="width:85%;">
                     <div>
-                        <h3 class="otherspan">Parent Assessments for Gifted and Talented Students</h3>
+                        <h3 class="spanred">Parent Assessments for Gifted and Talented Students</h3>
                         <p class="my-text">This parent assessment of young children’s (2 to 6 years old) will
                             provide an overarching picture of children’s physical, cognitive and
                             social-emotional gifts and strengths. It will give some key indicators
@@ -35,9 +35,9 @@
                     </div>
                     <hr style="width:85%;">
                     <div>
-                        <h3 class="myspan">Teachers Assessments for Gifted and Talented Students</h3>
+                        <h3 class="spangreen">Teachers Assessments for Gifted and Talented Students</h3>
                         <p class="my-text">This teacher assessment for primary school children (6 to 12 years old)
-                            is a checklist that can be used to help teachers identify their student’s
+                            is a assessment that can be used to help teachers identify their student’s
                             potential areas of giftedness (Intellectual, Creative, Social, Perceptual,
                             Physical domains) and indicators that may assist in further specific identification
                             measures are needed (e.g., Weschler Intelligence Scale for Children – WISC-V).
@@ -47,10 +47,10 @@
 
 
                 <form style="text-align: center; margin-bottom: 30px; font-size: 130%">
-                    <a href="/checklist" class="button-74">Start Your Checklist</a>
+                    <a href="/checklist" class="button-74">Start Your Assessment</a>
                 </form>
             </div>
-            <br><br><br><br>
+
         </div>
     </div>
 </div>

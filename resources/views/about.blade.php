@@ -35,7 +35,7 @@
 
                     <h4>Teachers Assessments for Gifted and Talented Students</h4>
                     <p class="my-text">This teacher assessment for primary school children (6 to 12 years old)
-                        is a checklist that can be used to help teachers identify their student’s
+                        is a assessment that can be used to help teachers identify their student’s
                         potential areas of giftedness (Intellectual, Creative, Social, Perceptual,
                         Physical domains) and indicators that may assist in further specific identification
                         measures are needed (e.g., Weschler Intelligence Scale for Children – WISC-V).</p>

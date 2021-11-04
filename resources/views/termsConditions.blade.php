@@ -75,7 +75,7 @@
                     <p class="text-center myspan">User Submissions</p>
 
                     <p>We may provide functionality that enables you to post, upload, submit or otherwise make
-                        available text (including checklists, form responses, recourse plans), images, audio, video,
+                        available text (including assessment, form responses, recourse plans), images, audio, video,
                         presentations, or other content (“User Submissions”) to the Growing Readers and Writers Service.</p>
 
                     <p>You retain all of your ownership rights to your User Submissions. For all User Submissions, by making
