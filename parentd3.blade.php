@@ -11,10 +11,11 @@
                 <div class="card">
                     <div class="card-body">
                         <h2>Parent Assessment</h2><br>
-                        @livewire('multiformcontrol')
-                        <!--<form method="POST" class="checklist-form" action="/submit/parentform1">
+
+                        <form method="POST" class="checklist-form" action="/submit/parentform">
                             @csrf
                             <div class="">
+
                                 <div class="form-section">
                                     <div class="grid-container">
                                         <div data-toggle="tooltip" data-placement="top" title="•	Creativity (ideas, music, images)
@@ -415,7 +416,7 @@
 
                                 <div class="form-navigation">
                                     <button type="submit" class="btn button-74 btn-sucess float-right">Submit</button>
-                                </div>-->
+                                </div>
                             </div>
                         </form>
                     </div>

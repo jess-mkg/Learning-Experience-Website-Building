@@ -4,8 +4,8 @@
 <title>Begin Assessment</title>
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-9">
-            <div class="card">
+        <div class="col-md-10">
+            <div class="card borderr">
                 <div class="card-body">
                     <h1>Gifted & Talented Assessment</h1>
                     <div>
@@ -20,7 +20,6 @@
                             and experiences that will re(engage) gifted students. Selected research publications from our research lab and
                             related projects can be seen below.</p>
                     </div>
-                    <hr style="width:85%;">
                     <div>
                         <h3 class="spanred">Parent Assessments for Gifted and Talented Students</h3>
                         <p class="my-text">This parent assessment of young children’s (2 to 6 years old) will
@@ -33,7 +32,6 @@
                             to excel in the future.
                         </p>
                     </div>
-                    <hr style="width:85%;">
                     <div>
                         <h3 class="spangreen">Teachers Assessments for Gifted and Talented Students</h3>
                         <p class="my-text">This teacher assessment for primary school children (6 to 12 years old)
@@ -61,17 +59,17 @@
                 <!--parent role-->
                 @if(Auth::user()->role == 'Parent')
                 <form class="my-button-style">
-                    <a class="button-74" href="/checklist-parents">Begin</a>
+                    <a class="button-74" href="/parents-assessment">Begin</a>
                 </form>
                 <!--teacher role-->
                 @elseif(Auth::user()->role == 'Teacher')
                 <form class="my-button-style">
-                    <a class="button-74" href="/checklist-teachers">Begin</a>
+                    <a class="button-74" href="/teachers-assessment">Begin</a>
                 </form>
                 <!--error no access to checklist - no role-->
                 @else
                 <form class="my-button-style">
-                    <a class="button-74" href="/checklist">Begin</a>
+                    <a class="button-74" href="/assessment">Begin</a>
                 </form>
                 @endif
                 @endif

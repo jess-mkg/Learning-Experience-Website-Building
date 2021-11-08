@@ -4,8 +4,8 @@
 <title>Start Page</title>
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-9">
-            <div class="card">
+        <div class="col-md-10">
+            <div class="card borderr">
                 <div class="card-body">
                     <h1>Gifted & Talented Assessment</h1>
                     <div>
@@ -20,7 +20,6 @@
                             and experiences that will re(engage) gifted students. Selected research publications from our research lab and
                             related projects can be seen below.</p>
                     </div>
-                    <hr style="width:85%;">
                     <div>
                         <h3 class="spanred">Parent Assessments for Gifted and Talented Students</h3>
                         <p class="my-text">This parent assessment of young children’s (2 to 6 years old) will
@@ -33,7 +32,6 @@
                             to excel in the future.
                         </p>
                     </div>
-                    <hr style="width:85%;">
                     <div>
                         <h3 class="spangreen">Teachers Assessments for Gifted and Talented Students</h3>
                         <p class="my-text">This teacher assessment for primary school children (6 to 12 years old)
@@ -47,7 +45,7 @@
 
 
                 <form style="text-align: center; margin-bottom: 30px; font-size: 130%">
-                    <a href="/checklist" class="button-74">Start Your Assessment</a>
+                    <a href="/assessment" class="button-74">Start Your Assessment</a>
                 </form>
             </div>
 

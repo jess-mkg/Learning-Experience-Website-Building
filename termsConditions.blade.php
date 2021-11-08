@@ -5,7 +5,7 @@
 <link type="text/css" rel="stylesheet" href="/css/test.css">
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-9">
+        <div class="col-md-10">
             <div class="card" style="width: 110%;">
                 <div class="card-body">
                     <h1 class="text-center">Terms & Conditions</h1>

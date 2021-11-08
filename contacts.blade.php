@@ -5,8 +5,8 @@
 <link type="text/css" rel="stylesheet" href="/css/style.css">
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-9">
-            <div class="card">
+        <div class="col-md-12">
+            <div class="card borderr">
                 <div class="card-body" style="padding: 20px;">
                     <div class="contact">
                         <div class="my-wrapper">
