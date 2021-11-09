@@ -59,12 +59,12 @@
                 <!--parent role-->
                 @if(Auth::user()->role == 'Parent')
                 <form class="my-button-style">
-                    <a class="button-74" href="/parents-assessment">Begin</a>
+                    <a class="button-74" href="/parents-assessment-1">Begin</a>
                 </form>
                 <!--teacher role-->
                 @elseif(Auth::user()->role == 'Teacher')
                 <form class="my-button-style">
-                    <a class="button-74" href="/teachers-assessment">Begin</a>
+                    <a class="button-74" href="/teachers-assessment-1">Begin</a>
                 </form>
                 <!--error no access to checklist - no role-->
                 @else

@@ -8,11 +8,16 @@
     <section>
         <div class="row justify-content-center">
             <div class="checklist-card-size">
+            <div class="my-progress-bar" style="margin: 20px;">
+                <div class="p-container" style="margin: auto; background-color: rgb(192, 192, 192); width: 50%; border-radius: 20px;">
+                    <div class="myp-b" style=" width: 40%; background-color: rgb(116, 194, 92); color: white; padding: 2%; border-radius: 15px;"> </div>
+                </div>
+            </div>
                 <div class="card">
                     <div class="card-body">
                         <h2>Parent Assessment</h2><br>
 
-                        <!--<form method="POST" class="checklist-form" action="/submit/parentform">
+                        <form method="POST" class="checklist-form" action="/submit/parentform2">
                             @csrf
                             <div class="">
                                 <div class="form-section">
@@ -108,7 +113,7 @@
                                     <button type="submit" class="btn button-74 btn-sucess float-right">Submit</button>
                                 </div>
                             </div>
-                        </form> -->
+                        </form>
                     </div>
                 </div>
             </div>
