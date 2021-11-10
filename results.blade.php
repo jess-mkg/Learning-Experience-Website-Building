@@ -6,7 +6,7 @@
     <link type="text/css" rel="stylesheet" href="/css/style.css">
     <div class="row justify-content-center">
         <div class="col-md-12">
-            <div class="my-card borderr">
+            <div class="card borderr round-border">
                 <div class="my-card-body">
                     <!-- results for teachers checklist -->
                     @if ((DB::table('checklist_teachers')->where('user_id', '=', Auth::user()->name))->first())
@@ -207,7 +207,8 @@
                                     </p>
                                 </div>
                                 <h2 class="mt-4">Based on Your Results</h2>
-                                <p class="">Your child showed strength in the <span class="{{$maxTEdit}}">{{$maxTName}}</span> domain, support your child in regards to this domain by engaging in activities related to:</p>
+                                <p>Please engage you child in activities to support your child's <span class="{{$minTEdit}}">{{$minTName}}</span> development.
+                                    Your child showed strength in the <span class="{{$maxTEdit}}">{{$maxTName}}</span> domain, support your child by engaging in activities related to:</p>
                                 <ul>
                                     <?php foreach ($arrTDesc[$maxTKey] as $i) : ?>
                                         <li>{{$i}}</li>
@@ -220,21 +221,12 @@
                                         <li>{{$i}}</li>
                                     <?php endforeach; ?>
                                 </ul>
-                                <p>Please engage you child in these activities to support your child's <span class="{{$minTEdit}}">{{$minTName}}</span> development.</p>
-
                             </div>
                         </div>
-                        <!--<div class="form-group">
-                            <h2 class="mt-3 ml-sm-3">Resources</h2>
-                            <textarea class="form-control" id="traits" name="traits" rows="2"></textarea>
-                        </div>-->
-
-
-
 
                         <!-- results for parents checklist -->
                         @elseif ((DB::table('checklist_parents')->where('user_id', '=', Auth::user()->name))->first())
-                        <h2 class="p-3 just-bold">Child Assessment Results</h2>
+
                         @php
                         $var1 = round((App\Http\Controllers\ViewParentResults::parentsResultsCog())*25);
                         $var2 = round((App\Http\Controllers\ViewParentResults::parentsResultsPhy())*25);
@@ -257,12 +249,12 @@
                         3 => "spiritual");
 
                         $arrDesp = array(0 => array(0 => "Engaging in creative activities (e.g., ideas, music, images, art)",
-                        1 => "encourage inquiry and curiosity (e.g., visit a science museum or zoo)",
+                        1 => "Encourage inquiry and curiosity (e.g., visit a science museum or zoo)",
                         2 => "Develop short term and long term memory (e.g., recall games)",
-                        3 => "Support language and literacy reading and writing (e.g., reading fiction and non-fiction storybooks and writing for different authentic purposes)",
+                        3 => "Support language, literacy, reading and writing (e.g., reading fiction and non-fiction storybooks and writing for different authentic purposes)",
                         4 => "Support maths counting and problem solving through everyday activities (e.g., grocery shopping and games)"),
                         1 => array(0 => "Provide fine motor activities (e.g., manipulating and building Lego)",
-                        1 => "Provide multisensory (vision, hearing, smell, taste, touch, kinesthesic) experiences such as listening to different types of music (e.g., beats, time, rhythm)",
+                        1 => "Provide multisensory experiences (vision, hearing, smell, taste, touch, kinesthesic) such as listening to different types of music (e.g., beats, time, rhythm)",
                         2 => "Play outdoor sports and games (e.g., balance, hand and feet ball activities)"),
                         2 => array(0 => "Provide social opportunities for forming friendships with others (e.g., join a play group or library family events)",
                         1 => "Provide opportunities for fostering communication and collaboration with others (e.g., talking about special interest topics)"),
@@ -287,9 +279,13 @@
                         $minEdit = $arrColour[$minKey];
 
                         @endphp
-                        <br>
-                        <div class="total-per just-bold">Total Result: {{$total}}%</div>
-                        <div class="tree-grid pt-3">
+                        <h1 class="line-title pl-3 pt-4 just-bold">Child Assessment Results</h1>
+                        <div class="my-form-inline">
+
+                            <div><img class="possum" src="/svg/POSSUM.png"></div>
+                            <div class="move-total align-self-end total-per just-bold">{{$total}}%</div>
+                        </div>
+                        <div class="tree-grid">
                             <div>
                                 <div class="tree-grid-cat">
                                     <div class="grid-item-b cog">
@@ -1097,13 +1093,14 @@
                                             <li>{{$i}}</li>
                                         <?php endforeach; ?>
                                     </ul>
-                                    <p>Your child would benefit from further support in activities, such as:</p>
+                                    <p>Please engage your child in activities to support your child's <span class="{{$minEdit}}">{{$minName}}</span> development.
+                                        Your child would benefit from further support in activities, such as:</p>
                                     <ul>
                                         <?php foreach ($arrDesp[$minKey] as $i) : ?>
                                             <li>{{$i}}</li>
                                         <?php endforeach; ?>
                                     </ul>
-                                    <p>Please engage you child in these activities to support your child's <span class="{{$minEdit}}">{{$minName}}</span> development.</p>
+
                                     <div class="section2-about-tree">
 
                                     </div>

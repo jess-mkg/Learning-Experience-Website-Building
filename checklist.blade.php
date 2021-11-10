@@ -5,7 +5,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-10">
-            <div class="card borderr">
+            <div class="card borderr round-border">
                 <div class="card-body">
                     <h1>Gifted & Talented Assessment</h1>
                     <div>

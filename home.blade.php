@@ -5,9 +5,9 @@
 <div class="container mt-2">
     <div class="row justify-content-center">
         <div class="col-md-12">
-            <div class="my-card borderr">
+            <div class="my-card other-border">
                 <div>
-                    <div class="profile-containter pt-5 pb-3">
+                    <div class="backg profile-containter pt-5 pb-3">
                         <div class="profile-pic-window">
                             @if ((Auth::user()->photo == 1))
                             <img class="pro-pic" src="/png/crocodile.png">

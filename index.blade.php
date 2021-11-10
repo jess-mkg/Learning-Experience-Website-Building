@@ -9,7 +9,7 @@
             <img src="/svg/logo12.png" class="tree-logo">
         </div>
         <div class="row justify-content-center" style="padding: 10px">
-            <div class="card col home-cards border-green">
+            <div class="card col home-cards border-green round-border">
                 <p>Indicates whether your child displays characteristics of
                     <span class="">giftedness</span> such as
                     <span class="spanred">memory</span>,
@@ -19,11 +19,11 @@
                 </p>
             </div>
 
-            <div class="card col home-cards border-yellow" style="font-size: 175%;">
+            <div class="card col home-cards border-yellow round-border" style="font-size: 175%;">
                 Set Up Your Profile Today<br><a class="mya" href="{{ route('register') }}"><span class="boldspan">Click Here</span></a>
             </div>
 
-            <div class="card col home-cards border-red">
+            <div class="card col home-cards border-red round-border">
                 <p>This assessment will provide an overarching picture of children’s
                     <span class="spanred">physical</span>,
                     <span class="spanblue">cognitive</span>,

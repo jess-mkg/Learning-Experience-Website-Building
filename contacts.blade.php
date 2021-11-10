@@ -6,7 +6,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-12">
-            <div class="card borderr">
+            <div class="card borderr round-border">
                 <div class="card-body" style="padding: 20px;">
                     <div class="contact">
                         <div class="my-wrapper">
@@ -32,8 +32,8 @@
                                     parents, and educators in childcare centres across southeast QLD where she conducted her
                                     early literacy programs.</p>
 
-                                <h5>Fields of Expertise</h5>
-                                <ul>
+                                <h5 class="my-text">Fields of Expertise</h5>
+                                <ul class="my-text">
                                     <li>Early Childhood Education</li>
                                     <li>Early Literacy Development</li>
                                     <li>Assessment of Literacy</li>
@@ -44,7 +44,7 @@
                             </div>
                         </div>
 
-                    </div> <br><br>
+                    </div>
                     <div class="contact">
                         <div class="my-wrapper-o">
                             <div class="my-wrap-item">
@@ -81,6 +81,6 @@
                     </div>
                 </div>
             </div>
-            <br><br><br><br>
+
         </div>
         @endsection
