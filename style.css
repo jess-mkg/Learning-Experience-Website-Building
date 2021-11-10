@@ -29,12 +29,14 @@
 .grid-content-left {
     float: left;
     list-style-type: none;
+    margin-top: 0.5rem;
+    font-size: 110%;
 }
 
 .grid-item {
     justify-content: center;
     text-align: center;
-    padding-top: 5px;
+    margin: auto;
 }
 
 .checklist-card-size {
@@ -50,7 +52,6 @@
     position: relative;
     top: 50%;
     height: 300px;
-    max-width: 570px;
     border-bottom: 2px solid #000;
     border-left: 2px solid #000;
     display: flex;
@@ -70,24 +71,22 @@
     transform: translateX(-50%);
 }
 
-.graph::before {
-    content: '';
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    right: 2px;
-    bottom: 0;
-    /*background: linear-gradient(0deg, rgb(212, 168, 226), rgb(154, 61, 230)); */
+.graph:hover {
+    border-left: solid 1.5px black;
+    border-top: solid 1.5px black;
+    border-right: solid 1.5px black;
 }
 
-.graph::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    background: rgba(183, 189, 164, 0.3);
+.graph-container {
+    background: repeating-linear-gradient(to bottom, #ddd, #ddd 1px, #fff 1px, #fff 10%);
+    margin-left: 20px;
+}
+
+.graph-con {
+    display: flex;
+    align-content: stretch;
+    justify-content: flex-start;
+    align-items: center
 }
 
 .result {
@@ -111,6 +110,7 @@
     position: relative;
     bottom: -310px;
     text-align: center;
+    font-size: 110%;
     padding: 1px;
     border-radius: 1px;
 }
@@ -118,6 +118,9 @@
 .contact-image {
     object-fit: scale-down;
     max-width: 100%;
+    box-shadow: 0 0 8px 1px gray;
+    border-radius: 20px;
+    margin: 3px;
 }
 
 .contact-contact {
@@ -125,8 +128,7 @@
 }
 
 .contact {
-    background: #ecebe3;
-    border: 2px solid black;
+    margin: 8px;
 }
 
 .myclass {
@@ -151,16 +153,20 @@
     background: white;
 }
 
+.round-border {
+    border-radius: 20px;
+}
+
 .border-green {
-    border: 7px solid #089408;
+    border: 7px solid #238d23;
 }
 
 .border-red {
-    border: 7px solid #ec0a0a;
+    border: 7px solid #f03636;
 }
 
 .border-yellow {
-    border: 7px solid #eff305;
+    border: 7px solid #dfe23a;
 }
 
 .tree-logo {
@@ -170,40 +176,44 @@
 
 .myspan {
     font-weight: bold;
-    color: #0fa127;
+    color: #2a9e3d;
 }
 
 .otherspan {
     font-weight: bold;
-    color: #d4740e;
+    color: #c9843a;
 }
 
 .spanred {
     font-weight: bold;
-    color: rgb(231, 0, 0);
+    color: rgb(207, 23, 23);
 }
 
 .spangreen {
     font-weight: bold;
-    color: rgb(14, 172, 14);
+    color: rgb(48, 167, 54);
 }
 
 .spanblue {
     font-weight: bold;
-    color: blue;
+    color: rgb(60, 60, 228);
 }
 
 .spanyellow {
     font-weight: bold;
-    color: #dde00b;
+    color: #dde024;
 }
 
 .just-bold {
     font-weight: bold;
 }
 
+.white-text {
+    color: white;
+}
+
 .boldspan {
-    color: rgb(10, 148, 40);
+    color: rgb(36, 101, 221);
     font-weight: 750;
 }
 
@@ -249,7 +259,7 @@
 }
 
 .my-text {
-    font-size: 110%;
+    font-size: 130%;
 }
 
 .mytooltiptext {
@@ -277,7 +287,7 @@
 .result-tree {
     width: 35px;
     height: 590px;
-    background-color: saddlebrown;
+    background-color: rgb(121, 64, 24);
     border-radius: 5px;
     display: flex;
     flex-direction: row;
@@ -294,7 +304,7 @@
 
 .branch {
     height: 25px;
-    background-color: peru;
+    background-color: rgb(173, 117, 60);
     border-radius: 10px;
     display: flex;
 }
@@ -335,7 +345,7 @@
     flex-direction: row;
     margin-left: 50px;
     border-radius: 10px;
-    background-color: peru;
+    background-color: rgb(173, 117, 60);
     transform: translateX(30px) translateY(-250%) rotate(315deg);
 }
 
@@ -347,7 +357,7 @@
     flex-direction: row;
     margin-left: 50px;
     border-radius: 10px;
-    background-color: peru;
+    background-color: rgb(173, 117, 60);
     transform: translateX(50px) translateY(35%) rotate(0deg);
 }
 
@@ -359,7 +369,7 @@
     flex-direction: row;
     margin-left: 50px;
     border-radius: 10px;
-    background-color: peru;
+    background-color: rgb(173, 117, 60);
     transform: translateX(-20px) translateY(250%) rotate(45deg);
 }
 
@@ -396,25 +406,12 @@
     transform: rotate(215deg);
 }
 
-
-/*
-.result-tree .cat-branch-l .branch-l-top {
-    display: flex;
-    flex-direction: row;
-    margin-left: 40px;
-}
-
-.result-tree .cat-branch-l .branch-l-bottom {
-    display: flex;
-    flex-direction: row;
-}*/
-
 .result-tree .cat-branch-l .branch-l-top .mini-branch-t {
     width: 120px;
     height: 15px;
     position: fixed;
     border-radius: 10px;
-    background-color: peru;
+    background-color: rgb(173, 117, 60);
     transform: translateX(-90px) translateY(275%) rotate(45deg);
 }
 
@@ -423,7 +420,7 @@
     height: 15px;
     position: fixed;
     border-radius: 10px;
-    background-color: peru;
+    background-color: rgb(173, 117, 60);
     transform: translateX(-50px) translateY(35%) rotate(0deg);
 }
 
@@ -432,7 +429,7 @@
     height: 15px;
     position: fixed;
     border-radius: 10px;
-    background-color: peru;
+    background-color: rgb(173, 117, 60);
     transform: translateX(-90px) translateY(-225%) rotate(315deg);
 }
 
@@ -506,11 +503,11 @@
 /*----------------------------------------------*/
 
 .result-tree .physical .leaf {
-    background-color: rgb(233, 8, 8);
+    background-color: rgb(216, 25, 25);
 }
 
 .result-tree .physical .info {
-    background-color: rgb(248, 96, 96);
+    background-color: rgb(231, 84, 84);
 }
 
 .result-tree .physical .info:hover {
@@ -526,20 +523,20 @@
 /*----------------------------------------------*/
 
 .result-tree .spiritual .leaf {
-    background-color: green;
+    background-color: rgb(24, 131, 24);
 }
 
 .result-tree .spiritual .info {
-    background-color: rgb(47, 197, 47);
+    background-color: rgb(69, 182, 69);
 }
 
 .result-tree .spiritual .info:hover {
     border: solid 1.5px black;
-    box-shadow: 0 5px 15px rgba(236, 28, 28, 0.863);
+    box-shadow: 0 5px 15px rgba(228, 50, 50, 0.863);
 }
 
 .result-tree .spiritual .remove {
-    background-color: rgba(50, 219, 53, 0.26);
+    background-color: rgba(80, 223, 82, 0.26);
 }
 
 
@@ -594,11 +591,11 @@
 /*----------------------------------------------*/
 
 .result-tree .cognitive .leaf {
-    background-color: rgb(14, 53, 230);
+    background-color: rgb(56, 87, 221);
 }
 
 .result-tree .cognitive .info {
-    background-color: rgb(25, 139, 233);
+    background-color: rgb(50, 149, 230);
 }
 
 .result-tree .cognitive .info:hover {
@@ -614,11 +611,11 @@
 /*----------------------------------------------*/
 
 .result-tree .social-emo .leaf {
-    background-color: rgb(236, 214, 11);
+    background-color: rgb(228, 210, 48);
 }
 
 .result-tree .social-emo .info {
-    background-color: rgb(236, 176, 11);
+    background-color: rgb(231, 179, 36);
 }
 
 .result-tree .social-emo .info:hover {
@@ -688,16 +685,27 @@
 }
 
 .bg-cr-b {
-    background-color: #fefbe9;
+    background-color: #fefff8;
 }
 
 .bigSpace {
-    height: 100px;
+    height: 80px;
 }
 
 .footer1 {
     position: fixed;
     overflow: hidden;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #181b3a;
+    color: white;
+    text-align: center;
+}
+
+.footer2 {
+    position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
@@ -717,7 +725,7 @@
 }
 
 .mytext {
-    color: rgb(175, 236, 173);
+    color: rgb(228, 238, 227);
 }
 
 .mytext:hover {
@@ -754,20 +762,19 @@
 }
 
 .line-sp {
-    border-left: 3px solid black;
-    padding: 7px;
+    padding: 10px;
 }
 
 .gc-link {
     font-size: 140%;
     text-decoration: none;
-    color: rgb(12, 85, 12);
+    color: rgb(31, 80, 31);
 }
 
 .gc-link:hover {
     font-size: 140%;
     text-decoration: none;
-    color: rgb(189, 117, 8);
+    color: rgb(196, 29, 29);
 }
 
 .myhr {
@@ -830,8 +837,12 @@ html {
     margin: 0
 }
 
+main {
+    background: #F5F4EB;
+}
+
 .chk-b-color {
-    background-color: rgb(238, 248, 238);
+    background-color: rgb(238, 242, 248);
 }
 
 .section1-about-tree {
@@ -860,19 +871,23 @@ html {
 }
 
 .cog {
-    border: 3px solid #0820f0;
+    border: 3px solid #2437e7;
+    background-color: #eef2fc;
 }
 
 .phy {
-    border: 3px solid #fd0404;
+    border: 3px solid #f03838;
+    background-color: #fceeee;
 }
 
 .s-e {
-    border: 3px solid #fdec04;
+    border: 3px solid #fcf045;
+    background-color: #fcfbee;
 }
 
 .spirit {
-    border: 3px solid green;
+    border: 3px solid rgb(22, 129, 22);
+    background-color: #eefcef;
 }
 
 .total {
@@ -884,4 +899,356 @@ html {
     justify-content: center;
     font-size: 130%;
     padding: 8px;
+}
+
+.intellect {
+    background: rgb(47, 110, 41);
+}
+
+.intellect:hover {
+    box-shadow: 0 5px 15px rgba(221, 61, 61, 0.863);
+}
+
+.intellect-border {
+    border: 4px solid rgb(50, 114, 44);
+    padding: 10px 18px;
+}
+
+.int-color {
+    color: rgb(71, 126, 66);
+    font-weight: bold;
+}
+
+.create {
+    background: rgb(247, 243, 47);
+}
+
+.create:hover {
+    box-shadow: 0 5px 15px rgba(52, 83, 219, 0.863);
+}
+
+.create-border {
+    border: 4px solid rgb(255, 252, 70);
+    padding: 10px 20px;
+}
+
+.cre-color {
+    color: rgb(223, 220, 39);
+    font-weight: bold;
+}
+
+.social {
+    background: rgb(71, 183, 218);
+}
+
+.social:hover {
+    box-shadow: 0 5px 15px rgba(221, 130, 27, 0.863);
+}
+
+.social-border {
+    border: 4px solid rgb(87, 196, 230);
+    padding: 10px 20px;
+}
+
+.soc-color {
+    color: rgb(87, 196, 230);
+    font-weight: bold;
+}
+
+.percept {
+    background: rgb(245, 63, 63);
+}
+
+.percept:hover {
+    box-shadow: 0 5px 15px rgba(65, 142, 241, 0.863);
+}
+
+.percept-border {
+    border: 4px solid rgb(248, 67, 67);
+    padding: 10px 18px;
+}
+
+.per-color {
+    color: rgb(245, 69, 69);
+    font-weight: bold;
+}
+
+.musc {
+    background: rgb(119, 212, 75);
+}
+
+.musc:hover {
+    box-shadow: 0 5px 15px rgba(231, 52, 39, 0.863);
+}
+
+.musc-border {
+    border: 4px solid rgb(129, 224, 84);
+    padding: 10px 18px;
+}
+
+.musc-color {
+    color: rgb(102, 212, 51);
+    font-weight: bold;
+}
+
+.motor {
+    background: rgb(252, 182, 52);
+}
+
+.motor:hover {
+    box-shadow: 0 5px 15px rgba(60, 214, 40, 0.863);
+}
+
+.motor-border {
+    border: 4px solid rgb(252, 185, 62);
+    padding: 10px 20px;
+}
+
+.mot-color {
+    color: rgb(255, 182, 45);
+    font-weight: bold;
+}
+
+.spir {
+    background: rgb(55, 78, 155);
+}
+
+.spir:hover {
+    box-shadow: 0 5px 15px rgba(231, 33, 76, 0.863);
+}
+
+.spir-border {
+    border: 4px solid rgb(74, 98, 179);
+    padding: 10px 20px;
+}
+
+.spi-color {
+    color: rgb(62, 49, 177);
+    font-weight: bold;
+}
+
+.table-container {
+    display: grid;
+    justify-content: center;
+}
+
+.table-con {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.table-item {
+    align-items: center;
+    margin: 5px;
+    background-color: #ecebe3;
+    font-size: 17px;
+    width: 135px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.profile-pic-window {
+    display: block;
+    margin: auto;
+    height: 150px;
+    width: 150px;
+    padding: 5px;
+    padding-top: 20px;
+    border: 3px solid #000000;
+    border-radius: 50%;
+    background-color: rgb(238, 234, 215);
+}
+
+.profile-pic-window-sm {
+    display: block;
+    margin: 5px;
+    margin-top: 10px;
+    height: 60px;
+    width: 60px;
+    padding: 5px;
+    padding-top: 10px;
+    border: 3px solid #000000;
+    border-radius: 50%;
+    background-color: rgb(238, 236, 215);
+}
+
+#pic-options {
+    display: none;
+    justify-content: center;
+    margin: auto;
+    width: 90%;
+    border: 2px solid black;
+    background-color: rgb(217, 232, 243);
+}
+
+.pro-pic {
+    display: block;
+    margin: auto;
+    width: 80%;
+}
+
+.pro-pic-option {
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+    width: 10%;
+}
+
+.profile-info {
+    text-align: center;
+}
+
+.profile-containter {
+    align-content: center;
+}
+
+.button-12 {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4px 5px;
+    border-radius: 6px;
+    border: none;
+    background-color: #f8fad8;
+    border: 2px solid #1b1102;
+    box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1), inset 0px 0.5px 0.5px rgba(255, 255, 255, 0.5), 0px 0px 0px 0.5px rgba(0, 0, 0, 0.12);
+    color: #404e32;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.pro-pic-form {
+    display: flex;
+}
+
+.radio-pro-pic {
+    justify-content: center;
+}
+
+.user-data {
+    background-color: rgb(245, 248, 239);
+    padding: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.tree-grid {
+    display: flex;
+    justify-content: center;
+}
+
+.tree-grid-item {
+    align-self: center;
+    width: 520px;
+}
+
+.tree-grid-cat {
+    height: 120px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    margin: 0 20px;
+}
+
+.grid-item-b {
+    padding: 5px;
+    align-items: center;
+    margin: 5px;
+    font-size: 17px;
+    width: 150px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.my-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: border-box;
+}
+
+.my-card-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 0 1.25rem;
+    padding-bottom: 1.25rem;
+}
+
+.borderr {
+    border: 1px solid rgba(49, 49, 49, 0.308);
+    border-radius: 20px;
+}
+
+.other-border {
+    border: 1px solid rgba(49, 49, 49, 0.308);
+    border-radius: 22px;
+    background: rgb(61, 148, 65);
+}
+
+.backg {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.contain {
+    display: flex;
+    width: 100%;
+}
+
+.y-axis {
+    transform: translateY(216px) translateX(-7px) rotate(270deg);
+    transform-origin: 0 0;
+    font-size: 120%;
+}
+
+.percent-v {
+    padding: 3.5px;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.349);
+}
+
+.oval {
+    height: 70px;
+    width: 200px;
+    background-color: rgb(216, 223, 213);
+    box-shadow: 0 0 10px 1px rgb(251, 255, 0);
+    border-radius: 50%;
+    align-items: center;
+    margin: auto;
+}
+
+.possum {
+    height: 250px;
+    margin: auto;
+    transform: rotate(4deg) translateX(-40px) translateY(-3px);
+    overflow: hidden;
+    margin-top: 0px;
+}
+
+.move-total {
+    transform: translateX(-106px) translateY(-25px);
+}
+
+.line-title {
+    margin-left: 10px;
+    border-bottom: 3px solid black;
+}
+
+.my-form-inline {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.my-app {
+    position: relative;
 }
