@@ -781,50 +781,6 @@
     width: 85%;
 }
 
-.button-74 {
-    background-color: #f8fad8;
-    border: 2px solid #1b1102;
-    border-radius: 30px;
-    box-shadow: #1b1102 4px 4px 0 0;
-    color: #1b1102;
-    cursor: pointer;
-    display: inline-block;
-    font-weight: 600;
-    font-size: 18px;
-    padding: 0 18px;
-    line-height: 50px;
-    text-align: center;
-    text-decoration: none;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-}
-
-.button-74:hover {
-    background-color: #fefbe9;
-    text-decoration: none;
-    color: #1b1102;
-}
-
-.button-74:active {
-    box-shadow: #1b1102 2px 2px 0 0;
-    transform: translate(2px, 2px);
-    text-decoration: none;
-}
-
-@media (min-width: 768px) {
-    .button-74 {
-        min-width: 120px;
-        padding: 0 25px;
-    }
-}
-
-.my-button-style {
-    margin-bottom: 30px;
-    text-align: center;
-    font-size: 130%
-}
-
 .thick-p {
     font-weight: 110%;
 }
@@ -1102,6 +1058,50 @@ main {
 
 .profile-containter {
     align-content: center;
+}
+
+.button-74 {
+    background-color: #f8fad8;
+    border: 2px solid #1b1102;
+    border-radius: 30px;
+    box-shadow: #1b1102 4px 4px 0 0;
+    color: #1b1102;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 18px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-74:hover {
+    background-color: #fefbe9;
+    text-decoration: none;
+    color: #1b1102;
+}
+
+.button-74:active {
+    box-shadow: #1b1102 2px 2px 0 0;
+    transform: translate(2px, 2px);
+    text-decoration: none;
+}
+
+@media (min-width: 768px) {
+    .button-74 {
+        min-width: 120px;
+        padding: 0 25px;
+    }
+}
+
+.my-button-style {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 130%
 }
 
 .button-12 {
