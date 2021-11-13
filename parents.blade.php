@@ -1,9 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-@livewireStyles
-@livewireScripts
+
 <title>Parents Assessment</title>
+
 <div class="container">
     <section>
         <div class="row justify-content-center">
@@ -170,8 +170,8 @@
                                         <div class="grid-item"><input type="radio" value="5" name="cog16"></div>
                                     </div>
                                 </div>
-                                <div class="form-navigation">
-                                    <button type="submit" class="btn button-74 btn-sucess float-right">Submit</button>
+                                <div class="form-navigation center-item">
+                                    <button type="submit" class="btn button-74 btn-sucess ">Submit</button>
                                 </div>
                             </div>
                         </form>

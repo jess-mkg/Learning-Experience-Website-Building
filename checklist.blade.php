@@ -43,13 +43,13 @@
                     </div>
                 </div>
                 <!--parent role who has completed the checklist-->
-                @if ((DB::table('checklist_parents')->where('user_id', '=', Auth::user()->name))->first())
+                @if ((DB::table('checklist_parents')->where('user_id', '=', Auth::user()->name)->whereNotNull('spt40'))->first())
                 <form class="my-button-style">
                     <div class="just-bold"> Assessment Already Completed</div>
                     <a class="button-74 mt-sm-2" href="/results">View Results</a>
                 </form>
                 <!--teacher role who has completed the checklist-->
-                @elseif ((DB::table('checklist_teachers')->where('user_id', '=', Auth::user()->name))->first())
+                @elseif ((DB::table('checklist_teachers')->where('user_id', '=', Auth::user()->name)->whereNotNull('sp40'))->first())
                 <form class="my-button-style">
                     <div class="just-bold"> Assessment Already Completed</div>
                     <a class="button-74 mt-sm-2" href="/results">View Results</a>
@@ -57,15 +57,64 @@
                 <!--parent or teacher role who has NOT completed the checklist-->
                 @else
                 <!--parent role-->
-                @if(Auth::user()->role == 'Parent')
-                <form class="my-button-style">
-                    <a class="button-74" href="/parents-assessment-1">Begin</a>
-                </form>
-                <!--teacher role-->
-                @elseif(Auth::user()->role == 'Teacher')
-                <form class="my-button-style">
-                    <a class="button-74" href="/teachers-assessment-1">Begin</a>
-                </form>
+                    @if(Auth::user()->role == 'Parent')
+
+                        @if ((DB::table('checklist_parents')->where('user_id', '=', Auth::user()->name)->whereNull('cog16'))->first())
+                        <form class="my-button-style">
+                            <a class="button-74" href="/parents-assessment-1">Begin</a>
+                        </form>
+                        @elseif ((DB::table('checklist_parents')->where('user_id', '=', Auth::user()->name)->whereNotNull('se34'))->first())
+                        <form class="my-button-style">
+                            <a class="button-74" href="/parents-assessment-4">Continue</a>
+                        </form>
+                        @elseif ((DB::table('checklist_parents')->where('user_id', '=', Auth::user()->name)->whereNotNull('phy25'))->first())
+                        <form class="my-button-style">
+                            <a class="button-74" href="/parents-assessment-3">Continue</a>
+                        </form>
+                        @elseif ((DB::table('checklist_parents')->where('user_id', '=', Auth::user()->name)->whereNotNull('cog16'))->first())
+                        <form class="my-button-style">
+                            <a class="button-74" href="/parents-assessment-2">Continue</a>
+                        </form>
+                        @else
+                        <form class="my-button-style">
+                            <a class="button-74" href="/parents-assessment-1">Begin</a>
+                        </form>
+                        @endif
+                    <!--teacher role-->
+                    @elseif(Auth::user()->role == 'Teacher')
+                        @if ((DB::table('checklist_teachers')->where('user_id', '=', Auth::user()->name)->whereNull('int11'))->first())
+                        <form class="my-button-style">
+                            <a class="button-74" href="/teachers-assessment-1">Begin</a>
+                        </form>
+                        @elseif ((DB::table('checklist_teachers')->where('user_id', '=', Auth::user()->name)->whereNotNull('moc33'))->first())
+                        <form class="my-button-style">
+                            <a class="button-74" href="/teachers-assessment-7">Continue</a>
+                        </form>
+                        @elseif ((DB::table('checklist_teachers')->where('user_id', '=', Auth::user()->name)->whereNotNull('muc30'))->first())
+                        <form class="my-button-style">
+                            <a class="button-74" href="/teachers-assessment-6">Continue</a>
+                        </form>
+                        @elseif ((DB::table('checklist_teachers')->where('user_id', '=', Auth::user()->name)->whereNotNull('per27'))->first())
+                        <form class="my-button-style">
+                            <a class="button-74" href="/teachers-assessment-5">Continue</a>
+                        </form>
+                        @elseif ((DB::table('checklist_teachers')->where('user_id', '=', Auth::user()->name)->whereNotNull('soc22'))->first())
+                        <form class="my-button-style">
+                            <a class="button-74" href="/teachers-assessment-4">Continue</a>
+                        </form>
+                        @elseif ((DB::table('checklist_teachers')->where('user_id', '=', Auth::user()->name)->whereNotNull('cre18'))->first())
+                        <form class="my-button-style">
+                            <a class="button-74" href="/teachers-assessment-3">Continue</a>
+                        </form>
+                        @elseif ((DB::table('checklist_teachers')->where('user_id', '=', Auth::user()->name)->whereNotNull('int11'))->first())
+                        <form class="my-button-style">
+                            <a class="button-74" href="/teachers-assessment-2">Continue</a>
+                        </form>
+                        @else
+                        <form class="my-button-style">
+                            <a class="button-74" href="/teachers-assessment-1">Begin</a>
+                        </form>
+                        @endif
                 <!--error no access to checklist - no role-->
                 @else
                 <form class="my-button-style">

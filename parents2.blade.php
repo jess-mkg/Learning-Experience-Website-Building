@@ -109,7 +109,7 @@
                                     </div>
                                 </div>
 
-                                <div class="form-navigation">
+                                <div class="form-navigation center-item">
                                     <button type="submit" class="btn button-74 btn-sucess float-right">Submit</button>
                                 </div>
                             </div>

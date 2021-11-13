@@ -9,7 +9,7 @@
             <div class="card borderr round-border">
                 <div class="my-card-body">
                     <!-- results for teachers checklist -->
-                    @if ((DB::table('checklist_teachers')->where('user_id', '=', Auth::user()->name))->first())
+                    @if ((DB::table('checklist_teachers')->where('user_id', '=', Auth::user()->name)->whereNotNull('sp40'))->first())
                     <h2 class="pt-3 pl-3 just-bold">Teacher Assessment Results</h2> <br>
                     @php
                     $varA = App\Http\Controllers\ViewTeacherResults::teacherResultsInt();
@@ -207,15 +207,16 @@
                                     </p>
                                 </div>
                                 <h2 class="mt-4">Based on Your Results</h2>
-                                <p>Please engage you child in activities to support your child's <span class="{{$minTEdit}}">{{$minTName}}</span> development.
-                                    Your child showed strength in the <span class="{{$maxTEdit}}">{{$maxTName}}</span> domain, support your child by engaging in activities related to:</p>
+
+                                Your child showed strength in the <span class="{{$maxTEdit}}">{{$maxTName}}</span> domain, support your child by engaging in activities related to:</p>
                                 <ul>
                                     <?php foreach ($arrTDesc[$maxTKey] as $i) : ?>
                                         <li>{{$i}}</li>
                                     <?php endforeach; ?>
                                 </ul>
 
-                                <p class="">Your child would benefit from further support in activities, such as:</p>
+                                <p>Please engage you child in activities to support your child's <span class="{{$minTEdit}}">{{$minTName}}</span> development.
+                                    Your child would benefit from further support in activities, such as:</p>
                                 <ul>
                                     <?php foreach ($arrTDesc[$minTKey] as $i) : ?>
                                         <li>{{$i}}</li>
@@ -225,7 +226,7 @@
                         </div>
 
                         <!-- results for parents checklist -->
-                        @elseif ((DB::table('checklist_parents')->where('user_id', '=', Auth::user()->name))->first())
+                        @elseif ((DB::table('checklist_parents')->where('user_id', '=', Auth::user()->name)->whereNotNull('spt40'))->first())
 
                         @php
                         $var1 = round((App\Http\Controllers\ViewParentResults::parentsResultsCog())*25);
@@ -279,7 +280,7 @@
                         $minEdit = $arrColour[$minKey];
 
                         @endphp
-                        <h1 class="line-title pl-3 pt-4 just-bold">Child Assessment Results</h1>
+                        <h1 class="line-title ml-3 mt-4 mr-4 just-bold">Child Assessment Results</h1>
                         <div class="my-form-inline">
 
                             <div><img class="possum" src="/svg/POSSUM.png"></div>
@@ -1115,16 +1116,33 @@
                             <!-- no results to display -->
                             @else
                             <br>
+                            @if ((DB::table('checklist_parents')->where('user_id', '=', Auth::user()->name)->whereNotNull('cog16'))->first())
                             <div>
-                                <p class="my-text"><span class="just-bold">Results: </span>No data to display</p>
+                                <p class="just-bold my-text">Assessment: <a class="button-74" href="/start-assessment" style="line-height: 30px;">Continue Your Assessment</a></p>
                             </div>
                             <div>
-                                <p><a class="button-74" href="/assessment" style="line-height: 30px;">Start Your Assessment</a></p>
+                                <p class="just-bold my-text">Results: No data to display</p>
+                            </div>
+                            @elseif ((DB::table('checklist_teachers')->where('user_id', '=', Auth::user()->name)->whereNotNull('int11'))->first())
+                            <div>
+                                <p class="just-bold my-text">Assessment: <a class="button-74" href="/start-assessment" style="line-height: 30px;">Continue Your Assessment</a></p>
+                            </div>
+                            <div>
+                                <p class="just-bold my-text">Results: No data to display</p>
+                            </div>
+                            @else
+                            <div>
+                                <p class="just-bold my-text">Assessment: <a class="button-74" href="/start-assessment" style="line-height: 30px;">Start Your Assessment</a></p>
+                            </div>
+                            <div>
+                                <p class="just-bold my-text">Results: No data to display</p>
                             </div>
                             @endif
 
+                            @endif
+
                         </div>
-                        <button class="button-12" onclick="window.print()">Print this page</button>
+                        <button class="button-12 mb-4" onclick="window.print()">Print this page</button>
                 </div>
             </div>
         </div>

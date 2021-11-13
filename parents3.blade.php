@@ -111,7 +111,7 @@
                                         <div class="grid-item"><input type="radio" value="5" name="se34"></div>
                                     </div>
                                 </div>
-                                <div class="form-navigation">
+                                <div class="form-navigation center-item">
                                     <button type="submit" class="btn button-74 btn-sucess float-right">Submit</button>
                                 </div>
                             </div>
